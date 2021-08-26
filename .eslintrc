@@ -18,6 +18,7 @@
   ],
   "plugins": ["baseui"],
   "rules": {
+    "react/prop-types": 0,
     "baseui/deprecated-theme-api": "warn",
     "baseui/deprecated-component-api": "warn",
     "baseui/no-deep-imports": "warn"
