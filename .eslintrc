@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "__PATH_PREFIX__": true
+  },
+  "parser": "babel-eslint", // uses babel-eslint transforms
+  "settings": {
+    "react": {
+      "version": "detect" // detect react version
+    }
+  },
+  "env": {
+    "node": true // defines things like process.env when generating through node
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended", // use recommended configs
+    "plugin:react/recommended"
+  ],
+  "plugins": ["baseui"],
+  "rules": {
+    "baseui/deprecated-theme-api": "warn",
+    "baseui/deprecated-component-api": "warn",
+    "baseui/no-deep-imports": "warn"
+  }
+}
