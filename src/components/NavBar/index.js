@@ -66,12 +66,13 @@ export default function NavBar() {
         <Item>
           <Link href="#">Contact</Link>
         </Item>
-      </List>
-      <List $align={ALIGN.center}>
+
         <Item>
           <Link href="tel:+17344243600">(734) 424-3600</Link>
         </Item>
       </List>
+      <List $align={ALIGN.center} />
+
       <List $align={ALIGN.right}>
         <Search
           {...options}
