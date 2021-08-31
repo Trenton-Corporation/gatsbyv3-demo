@@ -7,6 +7,7 @@ import { Grid, Cell } from "baseui/layout-grid"
 import { ListItem, ListItemLabel } from "baseui/list"
 import { H2 } from "baseui/typography"
 import { StyledLink as Link } from "baseui/link"
+import { Accordion, Panel } from "baseui/accordion"
 
 import Layout from "../components/Layout"
 
@@ -123,6 +124,11 @@ export default function Home() {
           <Card>
             <StyledBody>
               <H2>Contact</H2>
+              <Accordion onChange={({ expanded }) => console.log(expanded)}>
+                <Panel title="Panel 1">Content 1</Panel>
+                <Panel title="Panel 2">Content 2</Panel>
+                <Panel title="Panel 3">Content 3</Panel>
+              </Accordion>
               Corporate Headquarters Ann Arbor, Michigan | (734) 424-3600 North
               America Midwest USA & Eastern Canada | (734) 368-7528 Southeast
               USA | (706) 870-2202 Southern USA | (281) 389-2496 Gulf USA |
