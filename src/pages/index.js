@@ -116,13 +116,29 @@ export default function Home() {
                   Ann Arbor, Michigan |{" "}
                   <Link href="tel:+17344243600">(734) 424-3600</Link>
                 </Panel>
-                <Panel title="North America">Content 2</Panel>
+                <Panel title="North America">
+                  <ul
+                    className={css({
+                      width: "auto",
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                    })}
+                  >
+                    <ListItem>
+                      Midwest USA & Eastern Canada | (734) 368-7528
+                    </ListItem>
+                    <ListItem>Southeast USA | (706) 870-2202</ListItem>
+                    <ListItem>Southern USA | (281) 389-2496</ListItem>
+                    <ListItem>Gulf USA | (832) 948-6580</ListItem>
+                    <ListItem>Southwest USA | (432) 553-1543</ListItem>
+                    <ListItem>West Coast USA | (213) 700-3866</ListItem>
+                    <ListItem>
+                      Northwest USA & Western Canada | (208) 618-9876
+                    </ListItem>
+                  </ul>
+                </Panel>
                 <Panel title="Panel 3">Content 3</Panel>
-              </Accordion>
-              North America Midwest USA & Eastern Canada | (734) 368-7528
-              Southeast USA | (706) 870-2202 Southern USA | (281) 389-2496 Gulf
-              USA | (832) 948-6580 Southwest USA | (432) 553-1543 West Coast USA
-              | (213) 700-3866 Northwest USA & Western Canada | (208) 618-9876
+              </Accordion>{" "}
               International UK, Europe & North Africa | +33 (0) 6 89 58 41 29
               Middle East & India | +968 92844986 (available via WhatsApp)
               France & Belgium | +33 (0) 6 73 83 52 24 South America, Asia &
