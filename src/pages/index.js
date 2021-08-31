@@ -48,9 +48,7 @@ export default function Home() {
                 })}
               >
                 <ListItem>
-                  <ListItemLabel>
-                    <Link href="#">Material Requirements Calculator</Link>
-                  </ListItemLabel>
+                  <Link href="#">Material Requirements Calculator</Link>
                 </ListItem>
                 <ListItem>
                   <ListItemLabel description="Check back often for updated videos.">
@@ -80,36 +78,24 @@ export default function Home() {
                 })}
               >
                 <ListItem>
-                  <ListItemLabel>
-                    <Link href="#">Wax-Tape® Brand Anticorrosion Wraps</Link>
-                  </ListItemLabel>
+                  <Link href="#">Wax-Tape® Brand Anticorrosion Wraps</Link>
                 </ListItem>
                 <ListItem>
-                  <ListItemLabel>
-                    <Link href="#">Primers & Other Products</Link>
-                  </ListItemLabel>
+                  <Link href="#">Primers & Other Products</Link>
                 </ListItem>
                 <ListItem>
-                  <ListItemLabel description="description">
-                    <Link href="#">
-                      Innercoat® Hot-Applied Wax Coating System
-                    </Link>
-                  </ListItemLabel>
+                  <Link href="#">
+                    Innercoat® Hot-Applied Wax Coating System
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <ListItemLabel description="description">
-                    <Link href="#">Outerwraps</Link>
-                  </ListItemLabel>
+                  <Link href="#">Outerwraps</Link>
                 </ListItem>
                 <ListItem>
-                  <ListItemLabel description="description">
-                    <Link href="#">Casing Filling</Link>
-                  </ListItemLabel>
+                  <Link href="#">Casing Filling</Link>
                 </ListItem>
                 <ListItem>
-                  <ListItemLabel description="description">
-                    <Link href="#">Patch-Pad® Exothermic Weld Protector</Link>
-                  </ListItemLabel>
+                  <Link href="#">Patch-Pad® Exothermic Weld Protector</Link>
                 </ListItem>
               </ul>
             </StyledBody>
@@ -125,15 +111,18 @@ export default function Home() {
             <StyledBody>
               <H2>Contact</H2>
               <Accordion onChange={({ expanded }) => console.log(expanded)}>
-                <Panel title="Panel 1">Content 1</Panel>
-                <Panel title="Panel 2">Content 2</Panel>
+                <Panel title="Corporate Headquarters">
+                  {" "}
+                  Ann Arbor, Michigan |{" "}
+                  <Link href="tel:+17344243600">(734) 424-3600</Link>
+                </Panel>
+                <Panel title="North America">Content 2</Panel>
                 <Panel title="Panel 3">Content 3</Panel>
               </Accordion>
-              Corporate Headquarters Ann Arbor, Michigan | (734) 424-3600 North
-              America Midwest USA & Eastern Canada | (734) 368-7528 Southeast
-              USA | (706) 870-2202 Southern USA | (281) 389-2496 Gulf USA |
-              (832) 948-6580 Southwest USA | (432) 553-1543 West Coast USA |
-              (213) 700-3866 Northwest USA & Western Canada | (208) 618-9876
+              North America Midwest USA & Eastern Canada | (734) 368-7528
+              Southeast USA | (706) 870-2202 Southern USA | (281) 389-2496 Gulf
+              USA | (832) 948-6580 Southwest USA | (432) 553-1543 West Coast USA
+              | (213) 700-3866 Northwest USA & Western Canada | (208) 618-9876
               International UK, Europe & North Africa | +33 (0) 6 89 58 41 29
               Middle East & India | +968 92844986 (available via WhatsApp)
               France & Belgium | +33 (0) 6 73 83 52 24 South America, Asia &
