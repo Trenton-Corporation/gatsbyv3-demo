@@ -38,6 +38,27 @@ export default function Home() {
                 cold-applied waxes, outerwraps for additional mechanical
                 protection and casing filling for pipeline and cable casings.
               </p>
+
+              <ul
+                className={css({
+                  width: "auto",
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                })}
+              >
+                <ListItem>
+                  <ListItemLabel>
+                    <Link href="#">Material Requirements Calculator</Link>
+                  </ListItemLabel>
+                </ListItem>
+                <ListItem>
+                  <ListItemLabel description="Check back often for updated videos.">
+                    <Link href="#">
+                      Training Videos: Applying Trenton Products
+                    </Link>
+                  </ListItemLabel>
+                </ListItem>
+              </ul>
             </StyledBody>
             <StyledAction>
               <Button $as="a" href="#" kind={KIND.secondary}>
@@ -53,35 +74,44 @@ export default function Home() {
               <H3>How can we help?</H3>
               <ul
                 className={css({
-                  width: "375px",
+                  width: "auto",
                   paddingLeft: 0,
                   paddingRight: 0,
                 })}
               >
                 <ListItem>
                   <ListItemLabel>
-                    <Link href="#"> products</Link>
+                    <Link href="#">Wax-Tape® Brand Anticorrosion Wraps</Link>
                   </ListItemLabel>
                 </ListItem>
                 <ListItem>
                   <ListItemLabel>
-                    <Link href="#"> products</Link>
+                    <Link href="#">Primers & Other Products</Link>
                   </ListItemLabel>
                 </ListItem>
                 <ListItem>
                   <ListItemLabel description="description">
-                    <Link href="#"> products</Link>
+                    <Link href="#">
+                      Innercoat® Hot-Applied Wax Coating System
+                    </Link>
                   </ListItemLabel>
                 </ListItem>
                 <ListItem>
                   <ListItemLabel description="description">
-                    <Link href="#"> products</Link>
+                    <Link href="#">Outerwraps</Link>
+                  </ListItemLabel>
+                </ListItem>
+                <ListItem>
+                  <ListItemLabel description="description">
+                    <Link href="#">Casing Filling</Link>
+                  </ListItemLabel>
+                </ListItem>
+                <ListItem>
+                  <ListItemLabel description="description">
+                    <Link href="#">Patch-Pad® Exothermic Weld Protector</Link>
                   </ListItemLabel>
                 </ListItem>
               </ul>
-              Wax-Tape® Brand Anticorrosion Wraps Primers & Other Products
-              Innercoat® Hot-Applied Wax Coating System Outerwraps Casing
-              Filling Patch-Pad® Exothermic Weld Protector
             </StyledBody>
             <StyledAction>
               <Button $as="a" href="#" kind={KIND.secondary}>
