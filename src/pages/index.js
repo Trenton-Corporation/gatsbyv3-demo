@@ -1,13 +1,17 @@
 import React from "react"
-import { Grid, Cell } from "baseui/layout-grid"
-import { Card, StyledBody, StyledAction } from "baseui/card"
-import { StyledLink as Link } from "baseui/link"
+
+import { useStyletron } from "baseui"
 import { Button, KIND } from "baseui/button"
+import { Card, StyledBody, StyledAction } from "baseui/card"
+import { Grid, Cell } from "baseui/layout-grid"
+import { ListItem, ListItemLabel } from "baseui/list"
 import { H2, H3 } from "baseui/typography"
+import { StyledLink as Link } from "baseui/link"
 
 import Layout from "../components/Layout"
 
 export default function Home() {
+  const [css] = useStyletron()
   return (
     <Layout>
       <Grid>
@@ -47,6 +51,34 @@ export default function Home() {
             <StyledBody>
               <H2>Quick Links</H2>
               <H3>How can we help?</H3>
+              <ul
+                className={css({
+                  width: "375px",
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                })}
+              >
+                <ListItem>
+                  <ListItemLabel>
+                    <Link href="#"> products</Link>
+                  </ListItemLabel>
+                </ListItem>
+                <ListItem>
+                  <ListItemLabel>
+                    <Link href="#"> products</Link>
+                  </ListItemLabel>
+                </ListItem>
+                <ListItem>
+                  <ListItemLabel description="description">
+                    <Link href="#"> products</Link>
+                  </ListItemLabel>
+                </ListItem>
+                <ListItem>
+                  <ListItemLabel description="description">
+                    <Link href="#"> products</Link>
+                  </ListItemLabel>
+                </ListItem>
+              </ul>
               Wax-Tape® Brand Anticorrosion Wraps Primers & Other Products
               Innercoat® Hot-Applied Wax Coating System Outerwraps Casing
               Filling Patch-Pad® Exothermic Weld Protector
