@@ -5,7 +5,7 @@ import { Button, KIND } from "baseui/button"
 import { Card, StyledBody, StyledAction } from "baseui/card"
 import { Grid, Cell } from "baseui/layout-grid"
 import { ListItem, ListItemLabel } from "baseui/list"
-import { H2, H3 } from "baseui/typography"
+import { H2 } from "baseui/typography"
 import { StyledLink as Link } from "baseui/link"
 
 import Layout from "../components/Layout"
@@ -70,8 +70,7 @@ export default function Home() {
         <Cell span={4}>
           <Card>
             <StyledBody>
-              <H2>Quick Links</H2>
-              <H3>How can we help?</H3>
+              <H2>Products</H2>
               <ul
                 className={css({
                   width: "auto",
@@ -123,7 +122,7 @@ export default function Home() {
         <Cell span={4}>
           <Card>
             <StyledBody>
-              <H2>Contact Trenton</H2>
+              <H2>Contact</H2>
               Corporate Headquarters Ann Arbor, Michigan | (734) 424-3600 North
               America Midwest USA & Eastern Canada | (734) 368-7528 Southeast
               USA | (706) 870-2202 Southern USA | (281) 389-2496 Gulf USA |
