@@ -1,7 +1,8 @@
 import React from "react"
 import { Grid, Cell } from "baseui/layout-grid"
 import { Card, StyledBody, StyledAction } from "baseui/card"
-import { Button } from "baseui/button"
+import { StyledLink as Link } from "baseui/link"
+import { Button, KIND } from "baseui/button"
 import { H2, H3 } from "baseui/typography"
 
 import Layout from "../components/Layout"
@@ -22,20 +23,21 @@ export default function Home() {
           <Card>
             <StyledBody>
               <H2>Welcome</H2>
-              Trenton products provide effective, long-lasting anticorrosion
-              protection for your resources. Our products include a variety of
-              Wax-Tape® brand anticorrosion wraps for applications in
-              aboveground and belowground settings, hot-applied and cold-applied
-              waxes, outerwraps for additional mechanical protection and casing
-              filling for pipeline and cable casings. Learn more.
+              <p>
+                Trenton products provide effective, long-lasting anticorrosion
+                protection for your resources.
+              </p>
+              <p>
+                Our <Link href="#"> products</Link> include a variety of
+                Wax-Tape® brand anticorrosion wraps for applications in
+                aboveground and belowground settings, hot-applied and
+                cold-applied waxes, outerwraps for additional mechanical
+                protection and casing filling for pipeline and cable casings.
+              </p>
             </StyledBody>
             <StyledAction>
-              <Button
-                overrides={{
-                  BaseButton: { style: { width: "100%" } },
-                }}
-              >
-                Button Label
+              <Button $as="a" href="#" kind={KIND.secondary}>
+                Learn More
               </Button>
             </StyledAction>
           </Card>
@@ -45,17 +47,13 @@ export default function Home() {
             <StyledBody>
               <H2>Quick Links</H2>
               <H3>How can we help?</H3>
-              How can we help? Wax-Tape® Brand Anticorrosion Wraps Primers &
-              Other Products Innercoat® Hot-Applied Wax Coating System
-              Outerwraps Casing Filling Patch-Pad® Exothermic Weld Protector
+              Wax-Tape® Brand Anticorrosion Wraps Primers & Other Products
+              Innercoat® Hot-Applied Wax Coating System Outerwraps Casing
+              Filling Patch-Pad® Exothermic Weld Protector
             </StyledBody>
             <StyledAction>
-              <Button
-                overrides={{
-                  BaseButton: { style: { width: "100%" } },
-                }}
-              >
-                Button Label
+              <Button $as="a" href="#" kind={KIND.secondary}>
+                View Products
               </Button>
             </StyledAction>
           </Card>
@@ -75,12 +73,8 @@ export default function Home() {
               Australia | +1 (281) 389-2496 (available via WhatsApp)
             </StyledBody>
             <StyledAction>
-              <Button
-                overrides={{
-                  BaseButton: { style: { width: "100%" } },
-                }}
-              >
-                Button Label
+              <Button $as="a" href="#" kind={KIND.primary}>
+                Get In Touch
               </Button>
             </StyledAction>
           </Card>
