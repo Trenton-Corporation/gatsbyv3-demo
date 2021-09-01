@@ -137,12 +137,31 @@ export default function Home() {
                     </ListItem>
                   </ul>
                 </Panel>
-                <Panel title="Panel 3">Content 3</Panel>
+                <Panel title="International">
+                  <ul
+                    className={css({
+                      width: "auto",
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                    })}
+                  >
+                    <ListItem>
+                      UK, Europe & North Africa | +33 (0) 6 89 58 41 29
+                    </ListItem>
+                    <ListItem>
+                      Middle East & India | +968 92844986 (available via
+                      WhatsApp)
+                    </ListItem>
+                    <ListItem>
+                      France & Belgium | +33 (0) 6 73 83 52 24
+                    </ListItem>
+                    <ListItem>
+                      South America, Asia & Australia | +1 (281) 389-2496
+                      (available via WhatsApp)
+                    </ListItem>
+                  </ul>
+                </Panel>
               </Accordion>{" "}
-              International UK, Europe & North Africa | +33 (0) 6 89 58 41 29
-              Middle East & India | +968 92844986 (available via WhatsApp)
-              France & Belgium | +33 (0) 6 73 83 52 24 South America, Asia &
-              Australia | +1 (281) 389-2496 (available via WhatsApp)
             </StyledBody>
             <StyledAction>
               <Button $as="a" href="#" kind={KIND.primary}>
